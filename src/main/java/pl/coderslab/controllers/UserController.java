@@ -85,9 +85,11 @@ public class UserController {
 	@RequestMapping(value = "/edit/{id}", method = RequestMethod.POST)
 	public String editUser(@ModelAttribute User user, @PathVariable long id, @RequestParam String permission) {
 		User userToUpdate = userRepository.findOne(id);
+		String password = user.getPassword();
+		String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
 		userToUpdate.setLogin(user.getLogin());
 		userToUpdate.setPermission(permission);
-		userToUpdate.setPassword(user.getPassword());
+		userToUpdate.setPassword(hashedPassword);
 		userToUpdate.setEmail(user.getEmail());
 		userRepository.save(userToUpdate);
 		return "redirect:/admin/user/editlist";

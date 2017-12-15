@@ -78,7 +78,7 @@ public class ProfileController {
 		User user = userRepository.findOne((Long) session.getAttribute("user_id"));
 		if(BCrypt.checkpw(password, user.getPassword())) {
 			if(newPassword.equals(confirmNewPassword)) {
-				user.setEmail(newPassword);
+				user.setPassword(newPassword);
 				userRepository.save(user);
 				String message = "Password changed";
 				model.addAttribute("changed", message);

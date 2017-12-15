@@ -14,10 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import pl.coderslab.entities.History;
 import pl.coderslab.entities.User;
-import pl.coderslab.entities.WordGroup;
 import pl.coderslab.repositories.HistoryRepository;
 import pl.coderslab.repositories.UserRepository;
-import pl.coderslab.repositories.WordGroupRepository;
 import pl.coderslab.repositories.WordRepository;
 
 @Controller

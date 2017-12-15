@@ -13,4 +13,6 @@ public interface HistoryRepository extends JpaRepository <History, Long> {
 	@Query(value = "select * from history where user_id =:userId order by solve_date desc limit 10", nativeQuery = true)
 	List<History> findLast10ByUserId(@Param("userId") long userId);
 	
+	@Query(value = "select * from history where user_id =:userId order by solve_date desc", nativeQuery = true)
+	List<History> findAllByUserId(@Param("userId") long userId);
 }

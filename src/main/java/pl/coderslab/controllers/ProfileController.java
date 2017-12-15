@@ -90,4 +90,12 @@ public class ProfileController {
 		}
 		return "profileChangePassword";
 	}
+	
+	@RequestMapping("/history")
+	public String showAllHistory(Model model, HttpSession session) {
+		long userId = (Long) session.getAttribute("user_id");
+		List<History> history = historyRepository.findAllByUserId(userId);
+		model.addAttribute("history", history);
+		return "history";
+	}
 }

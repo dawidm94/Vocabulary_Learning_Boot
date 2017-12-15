@@ -1,0 +1,193 @@
+/* ADMIN MENU LIST */
+ul.navbarAdmin {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a40000;
+}
+li.navbarAdmin {
+    float: left;
+}
+
+li.navbarAdmin a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.navbarAdmin a:hover:not(.adminnavbaractive) {
+    background-color: #d98e8e;
+}
+
+.adminnavbaractive {
+    background-color: #d98e8e;
+}
+
+/* CARDS */
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+    border-color: blue;
+}
+
+.card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img#category {
+    border-radius: 5px 5px 0 0;
+}
+
+.container2 {
+    padding: 2px 16px;
+}
+
+table#categories
+{
+    border-collapse:separate;
+    border-spacing:0 20px;
+}
+
+/* RANDOM TABLE */
+
+#random {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+#random td, #random th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#random tr:nth-child(even){background-color: #f2f2f2;}
+
+#random tr:hover {background-color: #ddd;}
+
+#random th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #428BCA;
+    color: white;
+}
+
+.profile td{
+	padding: 20px
+}
+
+/* RESULT TEST TABLE */
+
+#result {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    font-weight: bold;
+}
+
+#result td, #result th {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 8px;
+}
+
+#result th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #428BCA;
+    color: white;
+}
+/* HISTORY TABLE */
+
+#history {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+#history td, #history th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	text-align: center;
+}
+
+
+#history th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #428BCA;
+    color: white;
+}
+
+/* USER WORD EDIT TABLE */
+
+#wordedit {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    font-weight: bold;
+}
+
+#wordedit td, #wordedit th {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 8px;
+}
+
+#wordedit th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #428BCA;
+    color: white;
+}
+
+/* DROPDOWN MENU*/
+.dropbtn {
+    background-color: #007bff;
+    color: #77BCFF;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+	color:blue;
+    background-color: #e9ecef;
+}

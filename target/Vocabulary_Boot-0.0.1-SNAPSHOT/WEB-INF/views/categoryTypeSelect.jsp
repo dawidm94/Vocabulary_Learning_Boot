@@ -18,7 +18,7 @@
 	<div class="card border-primary mb-3 text-center" style="width: 100%;">
   		<div class="card-body">
    			<h4 class="card-title">Basic Categories</h4>
-    		<p class="card-text">Basic categories added by admin.</p>
+    		<p class="card-text">Basic categories added by administrator.</p>
     		<a href="<c:url value="/categories/basic"/>" class="btn btn-primary">Go to basic categories</a>
  		 </div>
 	</div>

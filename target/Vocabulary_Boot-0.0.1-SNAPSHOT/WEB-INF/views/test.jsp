@@ -18,10 +18,10 @@
 		<ol>
 		<c:forEach items="${sessionScope.testList}" var="wordTest" begin="0" varStatus="theCount">
 		<li>
-			<c:if test="${wordTest.word.eng==wordTest.userAnswer}">
+			<c:if test="${fn:toLowerCase(wordTest.word.eng)==fn:toLowerCase(wordTest.userAnswer)}">
 				<span style="color: green;">&#10004;</span>
 			</c:if>
-			<c:if test="${(wordTest.word.eng!=wordTest.userAnswer) && sessionScope.actuallQuestion>theCount.index}">
+			<c:if test="${(fn:toLowerCase(wordTest.word.eng)!=fn:toLowerCase(wordTest.userAnswer)) && sessionScope.actuallQuestion>theCount.index}">
 				<span style="color: red;">&#10006;</span> 
 			</c:if>
 		</li>

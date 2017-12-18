@@ -33,7 +33,7 @@
 			<p align="center" style="font-size: 80px;padding-top: 10px ; border: 2px solid #428bca; border-radius: 5px; word-wrap: break-word;">${sessionScope.testList[sessionScope.actuallQuestion].word.pl}</p>
 			<br/><br/>
 			<form method="post">
-			<input name="userAnswer" id="userAnswer" autocomplete="off" autofocus type="text" style="font-size:80px;text-align: center; width:738px;border: 2px solid #428bca; border-radius: 5px;">
+			<input name="userAnswer" id="userAnswer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"  autofocus type="text" style="font-size:80px;text-align: center; width:738px;border: 2px solid #428bca; border-radius: 5px;">
 			<br/><br/>
 			<c:choose>
 				<c:when test="${fn:length(sessionScope.testList) == (sessionScope.actuallQuestion+1)}">

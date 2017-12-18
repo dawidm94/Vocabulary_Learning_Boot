@@ -39,13 +39,13 @@
 <br/><br/>
 <div align="center" class="col" style="border-left: 2px solid;">
 <br/>
-<h2 align="center">Your last 10 test solutions:</h2>
+<h2 align="center">Your last 10 test results:</h2>
 <br/><br/>
 <table id="history" style="padding: 15px;width: 70%" border="1">
 	<tr>
 		<th>Category</th>
 		<th>Result</th>
-		<th>Date of the solution </th>
+		<th>Date of solution </th>
 	</tr>
 	<c:forEach items="${history}" var="hist">
 		<tr>
@@ -58,6 +58,8 @@
 		</tr>
 	</c:forEach>
 </table>
+<br/>
+<p align="center"><a href="<c:url value="/profile/history"/>" class= "btn btn-primary">Show all</a></p>
 </div>
 </div>
 </div>

@@ -17,7 +17,7 @@
 		<h1 style="color:green;"><strong>KONIEC TESTU</strong></h1>
 		<c:set var="count" value="0" scope="page" />
 		<c:forEach items="${sessionScope.testList}" var="wordTest">
-			<c:if test="${wordTest.word.eng==wordTest.userAnswer}">
+			<c:if test="${fn:toLowerCase(wordTest.word.eng)==fn:toLowerCase(wordTest.userAnswer)}">
 				<c:set var="count" value="${count + 1}" scope="page"/>
 			</c:if>
 		</c:forEach>
@@ -42,7 +42,7 @@
   		<td><p>${theCount.index+1}</p></td>
   		<td><p>${word.word.pl}</p></td>
   		<c:choose>
-  			<c:when test="${word.word.eng==word.userAnswer}">
+  			<c:when test="${fn:toLowerCase(word.word.eng)==fn:toLowerCase(word.userAnswer)}">
   				<td><p style="color:green;">${word.word.eng}</p></td>
   			</c:when>
   			<c:otherwise>

@@ -18,16 +18,19 @@
 			<th>No.</th>
 			<th>PL</th>
 			<th>ENG</th>
+			<th></th>
 		</tr>
 		<c:forEach items="${randomWords}" var="word" begin="0" varStatus="theCount">
 		<tr>
 			<td>${theCount.index+1}</td>
 			<td>${word.pl}</td>
 			<td>${word.eng}</td>
+			<td><button onclick='responsiveVoice.speak("${word.eng}");'>🔊 Play</button></td>
 		</tr>
 		</c:forEach>	
 	</table>
 	<br/>
 	<p align="center"><a href='<c:url value="/"/>' class="btn btn-primary">Back</a> <a href="<c:url value="/random/test"/>" class= "btn btn-primary">Start test!</a></p>
 </body>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 </html>

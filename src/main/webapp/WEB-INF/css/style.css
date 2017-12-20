@@ -192,7 +192,7 @@ table#categories
     background-color: #e9ecef;
 }
 
-/* NAVBAR BOOTSTRAP - DISABLE COLLAPSE */
+/* NAVBAR BOOTSTRAP - DISABLE COLLAPSE 
 .navbar-collapse.collapse {
   display: block!important;
 }
@@ -207,4 +207,4 @@ table#categories
 
 .navbar-right {
   float: right!important;
-}
+}*/
